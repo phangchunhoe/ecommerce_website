@@ -220,3 +220,10 @@ def logout():
 
     return redirect(url_for('directories.home'))
 
+# Math Game 
+@directories.route('/math-game')
+@login_required
+def math_game():
+
+    return render_template("math_game.html", user=current_user)
+

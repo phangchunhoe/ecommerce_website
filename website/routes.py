@@ -37,7 +37,7 @@ def add_to_cart():
     return redirect(url_for('directories.home'))
 
 # Clear Cart on Payment 
-@directories.route('/cart/clear', methods=['POST'])
+@directories.route('/cart/clear', methods=['POST', 'GET'])
 @login_required
 def clear_cart():
     Order.query.filter_by(user_id=current_user.id).delete()

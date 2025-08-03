@@ -1,0 +1,19 @@
+# Core web framework
+Flask==3.0.3
+
+# Database and ORM
+Flask-SQLAlchemy==3.1.1
+SQLAlchemy==2.0.30
+
+# User session management
+Flask-Login==0.6.3
+
+# Password hashing and security
+Werkzeug==3.0.3
+
+# QR Code generation
+qrcode==7.4.2
+pillow==10.3.0   # Needed by qrcode for image generation
+
+# Optional, to avoid SQLAlchemy warnings
+greenlet==3.0.3
